@@ -18,9 +18,8 @@ class App extends React.Component {
   return(
     <div className="App">
       <TopMenu />
-     if (this.state.activeWindow==0) {
+    
        <Home />
-     }
      
       
     </div>
