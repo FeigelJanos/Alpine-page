@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ToKnow extends Component {
-
-    render() { 
+const ToKnow = ()=> {
+ 
         return ( 
-            <p>Tudnivalók</p>
+            <React.Fragment>
+                <p>Tudnivalók</p>
+            </React.Fragment>
          );
-    }
 }
  
 export default ToKnow;

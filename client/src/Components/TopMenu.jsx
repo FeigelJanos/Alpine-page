@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {NavLink} from 'react-router-dom';
 
 class TopMenu extends Component {
    
@@ -6,9 +7,9 @@ class TopMenu extends Component {
         return ( 
             <React.Fragment>
                 <img alt="Cég logó" src="https://i.postimg.cc/CxVBG9g6/Ra-Fa2.png" id="company-logo"/>
-                <button onClick={console.log("Kezdőlap")}>Kezdőlap</button>
+                <NavLink to="/"> Kezdőlap </ NavLink>
                 <button onClick={console.log("Szolgáltatások")}>Szolgáltatásaink</button>
-                <button onClick={console.log("Tudnivalók")}>Hasznos tudni!</button>
+                <NavLink to="/GoodToKnow">Hasznos tudni!</ NavLink>
                 <button onClick={console.log("Ajánlat")}>Kérjen ajánlatot!</button>
                 <button onClick={console.log("Belépés")}>Belépés</button>
             </React.Fragment>
