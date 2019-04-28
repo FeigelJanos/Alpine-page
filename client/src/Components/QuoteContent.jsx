@@ -4,7 +4,12 @@ class Quote extends Component {
 
     render() { 
         return ( 
-            <p>Ajánlat</p>
+            <React.Fragment>
+                <form>
+
+                </form>
+            </React.Fragment>
+           
          );
     }
 }
