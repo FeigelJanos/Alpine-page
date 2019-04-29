@@ -3,17 +3,22 @@ import {NavLink} from 'react-router-dom';
 import logo from './Pictures/Ra-Fa2.png';
 
 class TopMenu extends Component {
-   
+    
+
     render() { 
         return ( 
             <React.Fragment>
                 <img alt="Cég logó" src={logo} id="company-logo"/>
                 <NavLink to="/"> Kezdőlap </ NavLink>
                 <NavLink to="/Services">Szolgáltatásaink</NavLink>
-                <NavLink to="/GoodToKnow">Tudnivalók</ NavLink>
+                <NavLink to="/GoodToKnow">Hasznos információk</ NavLink>
                 <NavLink to="/Quote">Kérjen ajánlatot!</NavLink>
-                <NavLink to="/Tasks">Feladatok</NavLink>
-                <NavLink to="/Admin">Admin</NavLink>
+                {this.props.authentication.isLoggedIn?
+                <NavLink to="/Tasks">Feladatok</NavLink>:
+                ""}
+                {this.props.authentication.isAdmin?
+                <NavLink to="/Admin">Admin</NavLink>:
+                ""}
                 <NavLink to="/Login">Belépés</NavLink>
             </React.Fragment>
          );

@@ -16,31 +16,33 @@ import BottomBar from './Components/BottomBar';
 
 
 class App extends React.Component {
-    state = { isLoggedIn: false,
-              isAdmin: false,
-    articles: {
-      title:'',
-      subtitle: '',
-      content: ''
-    }
+    state = { autenthications:
+              {isLoggedIn: false,
+              isAdmin: false
+            },
+            toKnowArticles: {
+              title:'',
+              subtitle: '',
+              content: ''
+            }
     }
 
- 
 
   render() { 
+  
   return(
     <BrowserRouter>
       <React.Fragment>
-        <TopMenu />
+        <TopMenu authentication={this.state.autenthications}/>
         <Switch> 
           <Route path="/" component={Home} exact/>
           <Route path="/Services" component={Services} exact/>
           <Route path="/GoodToKnow" component={ToKnow} exact/>
           <Route path="/Quote" component={Quote} exact/>
-          {this.state.isLoggedIn? 
+          {this.state.autenthications.isLoggedIn? 
           <Route path="/Tasks" component={Task} exact/>
         : ""}
-        {this.state.isAdmin? 
+        {this.state.autenthications.isAdmin? 
           <Route path="/Admin" component={Admin} exact/>
         : ""}
           <Route path="/Login" component={Login} exact/>
