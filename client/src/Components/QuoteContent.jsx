@@ -17,8 +17,16 @@ class Quote extends Component {
                         <label for="name2">Kereszt név:</label>
                         <input type="text" id="name2" name="name2" />
 
-                        <label for="adress">Elvégzendő munka címe:</label>
-                        <input type="text" id="adress" name="adress" />
+                        <h3>Elvégzendő munka címe:</h3>
+
+                        <label for="pc">Irányítószám:</label>
+                        <input type="number" id="pc" name="pc" />
+
+                        <label for="city">Város:</label>
+                        <input type="text" id="city" name="city" />
+
+                        <label for="street">Utca és házszám:</label>
+                        <input type="text" id="street" name="street" />
 
                         <label for="tel">Telefonszám:</label>
                         <input type="tel" id="tel" name="tel" />
@@ -54,11 +62,11 @@ class Quote extends Component {
                         <input type="file" id="picture" name="picture" />
                         
                         <p>A minél pontosabb ajánlat érdekében kövesse fotó készítési útmutatónkat:</p>
-                        <a href="#">Hogyan készítsen fotókat megrendeléséhez</a>
+                        <a href="www.google.hu">Hogyan készítsen fotókat megrendeléséhez</a>
 
                     </div>
                     <div>
-                        <h2>Vagy válasszon időpontot személyes szemléhez:</h2>
+                        <h2>Vagy válasszon időpontot személyes felméréshez:</h2>
                         <button>Időpont választása</button>
                         <p>A személyes felmérés Budapesti cím vagy 500.000Ft feletti megrendelés esetén díjmentes, egyéb esetekben kiszállási díjat számítunk fel.</p>
                     </div>
