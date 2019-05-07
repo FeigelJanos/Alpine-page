@@ -24,7 +24,7 @@ const BottomBar = ()=> {
                     <input type="tel" id="tel" name="tel" />
 
                     <label for="message">Üzenet:</label>
-                    <input type="text" id="message" name="message" />  
+                    <textarea id="message" name="message" />  
 
                     <button type="submit">Küldés</button>    
                 </form>

@@ -54,7 +54,7 @@ class Quote extends Component {
                         <h2>Kérem írja le röviden miben segíthetünk:</h2>
 
                         <label for="notes">Megjegyzések:</label>
-                        <input type="text" id="notes" name="notes" />
+                        <textarea id="notes" name="notes" />
                     </div>
                     <div>
                         <h2>Fénykép feltöltése:</h2>
@@ -65,14 +65,7 @@ class Quote extends Component {
                         <a href="www.google.hu">Hogyan készítsen fotókat megrendeléséhez</a>
 
                     </div>
-                    <div>
-                        <h2>Vagy válasszon időpontot személyes felméréshez:</h2>
-                        <button>Időpont választása</button>
-                        <p>A személyes felmérés Budapesti cím vagy 500.000Ft feletti megrendelés esetén díjmentes, egyéb esetekben kiszállási díjat számítunk fel.</p>
-                    </div>
-                    <div>
-                        <Calendar />
-                    </div>
+                   <button type="submit">Beküldés</button>
                 </form>
             </React.Fragment>
            

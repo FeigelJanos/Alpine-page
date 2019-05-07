@@ -17,14 +17,13 @@ import BottomBar from './Components/BottomBar';
 
 class App extends React.Component {
     state = { autenthications:
-              {isLoggedIn: false,
-              isAdmin: false
+              {isLoggedIn: true,
+              isAdmin: true
             },
             toKnowArticles: {
-              title:'',
-              subtitle: '',
-              content: ''
-            }
+              title:'x',
+              content: 'y'
+            },
     }
 
 
@@ -43,7 +42,7 @@ class App extends React.Component {
           <Route path="/Tasks" component={Task} exact/>
         : ""}
         {this.state.autenthications.isAdmin? 
-          <Route path="/Admin" component={Admin} exact/>
+          <Route path="/Admin" component={Admin}  exact/>
         : ""}
           <Route path="/Login" component={Login} exact/>
 
